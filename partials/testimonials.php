@@ -13,21 +13,21 @@
             <div class="owl-carousel owl-theme">
 
 
-            <?php
-                if(have_rows('t_testimonial_repeater')):
-                    while(have_rows('t_testimonial_repeater')):
-                        the_row();
-                        ?>
+                <?php
+                    if(have_rows('t_testimonial_repeater')):
+                        while(have_rows('t_testimonial_repeater')):
+                            the_row();
+                            ?>
 
-                        <div class="recommendation">
-                            <p><?php the_sub_field('recommendation'); ?></p>
-                            <h4>- <?php the_sub_field('name'); ?></h4>
-                        </div>
+                            <div class="recommendation">
+                                <p><?php the_sub_field('recommendation'); ?></p>
+                                <h4>- <?php the_sub_field('name'); ?></h4>
+                            </div>
 
-                        <?php
-                    endwhile;
-                endif;
-            ?>
+                            <?php
+                        endwhile;
+                    endif;
+                ?>
 
             </div>
         </div>

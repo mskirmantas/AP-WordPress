@@ -1,36 +1,36 @@
 	<!--  ================= Navbar =================  -->
-    <header>
-        <div class="container">	
+<header>
+    <div class="container">	
 
-            <nav>
+        <nav>
 
-                <div class="logo">
-                    <?php
+            <div class="logo">
+                <?php
                     $image = get_field('logo', 'option');
-                    ?>
-                    <img src="<?php echo $image ['sizes']['logo']; ?>" id="logo" alt="<?php bloginfo('name'); ?>">
-                </div>
+                ?>
+                <img src="<?php echo $image ['sizes']['logo']; ?>" id="logo" alt="<?php bloginfo('name'); ?>">
+            </div>
 
-                <div class="top-nav navigation"> 	
+            <div class="top-nav navigation"> 	
 
-                    <?php 
+                <?php 
                     $menu_settings = [
                         'menu_class' => 'nav-links',
                         'container' => false,
                         'theme_location' => 'primary-navigation'
                     ];
                     wp_nav_menu($menu_settings);
-                    ?>
+                ?>
 
-                </div>		
+            </div>		
 
-                <div class="burger">
-                    <div class="lines line1"></div>
-                    <div class="lines line2"></div>
-                    <div class="lines line3"></div>
-                </div>	
+            <div class="burger">
+                <div class="lines line1"></div>
+                <div class="lines line2"></div>
+                <div class="lines line3"></div>
+            </div>	
 
-            </nav>
+        </nav>
 
-        </div>
-    </header>
+    </div>
+</header>

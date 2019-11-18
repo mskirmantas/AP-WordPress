@@ -2,14 +2,14 @@
 
 /* Template Name: Homepage */
 
-get_header();
+    get_header();
 
-get_template_part('partials/hero');
-get_template_part('partials/services');
-get_template_part('partials/portfolio');
-get_template_part('partials/about');
-get_template_part('partials/testimonials');
-get_template_part('partials/contact');
+    get_template_part('partials/hero');
+    get_template_part('partials/services');
+    get_template_part('partials/portfolio');
+    get_template_part('partials/about');
+    get_template_part('partials/testimonials');
+    get_template_part('partials/contact');
 
 ?>
 
